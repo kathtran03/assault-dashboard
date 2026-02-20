@@ -4,7 +4,7 @@ let map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/dark-v10',
     center: [-122.3321, 47.6170],
-    zoom: 10.9
+    zoom: 10.5
 });
 
     let aggravatedData = null
@@ -169,7 +169,7 @@ function updateDashboard() {
     const reset = document.getElementById('reset');
     reset.addEventListener('click', event => {
 
-    map.flyTo({ center: [-122.3321, 47.6170], zoom: 10.9 });
+    map.flyTo({ center: [-122.3321, 47.6170], zoom: 10.5 });
     chart.load({ columns: [] });
 });
 geojsonFetch();
